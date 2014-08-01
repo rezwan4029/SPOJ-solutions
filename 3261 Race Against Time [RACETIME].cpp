@@ -92,7 +92,7 @@ int main(){
                 if( p <= Start[i] && q >= End[i] ) { // If the range full of the current block
                     Ans += BS(Blk[i],X);
                 }else {
-                    for( int j = max(Start[i],p) ; j <= min(End[i],q) ; j++ ) // if range have some portion in this blocks
+                    for( int j = max(Start[i],p) ; j <= min(End[i],q) ; j++ ) // if range have some portion in this block
                         Ans += ( A[j] <= X ) ;
                 }
             }
